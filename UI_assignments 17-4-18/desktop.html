@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UI Assignment</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        body {
+
+        }
+
+        .jumbotron {
+            background-image: url("Assets/header.jpg");
+            color: white;
+            height: 600px;
+            padding-top: 70px;
+        }
+
+        .first-col {
+            background-image: url("Assets/table-1.jpg");
+            height: 286px;
+            width: 350px;
+            margin: 10px auto;
+            padding-top: 5px;
+
+        }
+
+        .second-col {
+            background-image: url("Assets/table-2.jpg");
+            height: 286px;
+            width: 350px;
+            margin: 10px auto;
+            padding-top: 5px;
+
+        }
+
+        .third-col {
+            background-image: url("Assets/table-3.jpg");
+            height: 286px;
+            width: 350px;
+            background-repeat: no-repeat;
+            margin: 10px auto;
+            padding-top: 5px;
+        }
+
+        .container-fluid {
+            background-color: white;
+        }
+
+        .bgchange {
+            background-color: #122b40;
+            border: none;
+
+        }
+
+        .changebord {
+            border: none;
+        }
+
+        .col-lg-4 {
+            color: white;
+        }
+        .hgtchange
+        {
+            height: 500px;
+            margin-top: -170px;
+            margin-bottom: 450px;
+
+
+        }
+
+
+    </style>
+    <script>
+        var i = 0;
+        var txt = 'Its the only place you have to live';
+        var speed = 50;
+
+        function typeWriter() {
+            if (i < txt.length) {
+                document.getElementById("demo").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+        }
+    </script>
+
+
+</head>
+
+<body  data-spy="scroll" data-target=".navbar" data-offset="250" onload="typeWriter()">
+
+}">
+<nav class="navbar navbar-default navbar-fixed-top justify-content-center changebord">
+    <div class="container-fluid bgchange">
+        <div class="container">
+            <div class="navbar-header">
+
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <img src="Assets/logo.png"> </a>
+
+            </div>
+
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right" style="text-align: center">
+                    <li><a href="#Intro">Intro</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><button type="button" class="btn btn-primary" style="margin-top: 8px">SignUp</button></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<div class="jumbotron text-center">
+    <h3> Take Care of your body</h3>
+    <h2 id="demo"></h2>
+
+</div>
+<div class="container hgtchange" id="Intro">
+    <div class="row">
+        <div class="col-lg-4 first-col">
+            <div class="row">
+                <div class="col-lg-8 col-xs-8">
+                    <h4>
+                        Today's Schedule
+                    </h4>
+                </div>
+                <div class="col-lg-4 col-xs-4">
+
+                </div>
+
+            </div>
+
+            <br><br>
+            <div class="row">
+                <div class="col-lg-6 col-xs-6">
+                    <p> Early Exercise </p>
+                </div>
+                <div class="col-lg-6 col-xs-6 text-center ">
+                    <p>8.30-10.00</p>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-lg-6 col-xs-6 ">
+                    <p> Muscle Building </p>
+                </div>
+                <div class="col-lg-6 col-xs-6 text-center">
+                    <p>8.30-10.00</p>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-lg-6 col-xs-6 ">
+                    <p> Cardio </p>
+                </div>
+                <div class="col-lg-6 col-xs-6 text-center">
+                    <p>8.30-10.00</p>
+                </div>
+            </div>
+
+
+
+        </div>
+        <div class="col-lg-4 second-col">
+            <h4>
+                Premium Membership
+            </h4>
+            <br><br><br><br>
+            <h4>Register Today</h4>
+            <h3>20% Discount</h3>
+
+        </div>
+        <div class="col-lg-4 third-col">
+            <h4>
+                Happy Clients
+            </h4>
+            <br><br><br>
+            <h3>I couldn't be more happy with results!</h3>
+            <br><br>
+            <article>Nohan</article>
+
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid" id="Services">
+    <div class="container text-center">
+        <h1>Services</h1>
+        <p style="color:lightgrey; margin-bottom: 50px"> Achieve the best results with our wide variety of training
+            options.</p>
+        <div class="row">
+            <div class="col-lg-4">
+                <img src="Assets/icons/heart-blue.png">
+                <h3>Cardio Training</h3>
+            </div>
+            <div class="col-lg-4">
+                <img src="Assets/icons/guru-blue.png">
+                <h3>Yoga Pilates</h3>
+            </div>
+            <div class="col-lg-4">
+                <img src="Assets/icons/weight-blue.png">
+                <h3>Power Training</h3>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
