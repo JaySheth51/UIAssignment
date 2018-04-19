@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        .changebord {
+            border: none;
+            background-color: #122b40;
+        }
+    </style>
+    <script>
+        $(window).scroll(function() {
+            if ($(".navbar").offset().top > 50) {
+                $('#custom-nav').addClass('affix');
+                $(".navbar-fixed-top").addClass("top-nav-collapse");
+                $('.navbar-brand img').attr('src','Assets/logo-active.png'); //change src
+            } else {
+                $('#custom-nav').removeClass('affix');
+                $(".navbar-fixed-top").removeClass("top-nav-collapse");
+                $('.navbar-brand img').attr('src','Assets/logo.png')
+            }
+        });
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                var scroll = $(window).scrollTop();
+                if (scroll > 150) {
+                    $(".black").css("background" , "white");
+                }
+
+                else{
+                    $(".black").css("background" , "");
+                }
+            })
+        })
+    </script>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top justify-content-center changebord">
+    <div class="container-fluid black">
+    <div class="container ">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+
+            </button>
+            <a class="navbar-brand" href="#">
+                <img src="Assets/logo.png" width="50" height="35" align="middle"
+                     style="padding-bottom: 5px" class="d-inline-block align-top">
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#Intro">Intro</a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><button type="button" class="btn btn-primary" style="margin-top: 8px">SignUp</button></li>
+
+        </ul>
+        </div>
+    </div>
+    </div>
+</nav>
+<div class="text-center ">
+    1 <br><br><br>
+    5<br><br><br>
+    5
+    <br><br><br>
+    6
+    <br><br><br>
+    7
+    <br><br><br>
+    8
+    <br><br><br>
+    8<br><br><br>
+    9<br><br><br>
+    10
+    <br><br><br>
+    11<br><br><br>
+    12<br><br><br>
+    12<br><br><br>
+    15<br><br><br>
+</div>
+    <div id="Intro" class="text-center ">
+    intro starts here <br><br><br>
+    12<br><br><br>
+    12<br><br><br>
+    15<br><br><br>
+    17<br><br><br>
+    18<br><br><br>
+    20<br><br><br>
+    65<br><br><br>
+    15<br><br><br>
+        11<br><br><br>
+        12<br><br><br>
+        12<br><br><br>
+        15<br><br><br>
+    </div>
+    <div id="Services" class="text-center ">
+    services start here<br><br><br>
+    20<br><br><br>
+    55<br><br><br>
+    60<br><br><br>
+    55<br><br><br>
+    10<br><br><br>
+        11<br><br><br>
+        12<br><br><br>
+        12<br><br><br>
+        15<br><br><br>
+    25<br><br><br>
+    41<br><br><br>
+    21<br><br><br>
+    21<br><br><br>
+    </div>
+
+</body>
+</html>
