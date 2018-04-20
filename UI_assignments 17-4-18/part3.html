@@ -11,24 +11,18 @@
 
 
 
-        .thumbnail {
+        .thumb
+        {
             padding: 0 0 15px 0;
             border: none;
             border-radius: 0;
-        }
-        .thumbnail img {
-            width: 350px;
+            width: 300px;
             height: 270px;
             margin-bottom: 10px;
+
         }
-        .container .content
-        {
-            position: absolute;
-            top: 0;
-            opacity: 1.0;
-            padding-left: auto;
-            color: white;
-        }
+
+
         .jumbotron
         {
             background-image: url("Assets/header.jpg");
@@ -37,49 +31,61 @@
             padding-top: 70px;
             margin-bottom: -170px;
         }
+        .thumb1{
+            background-image: url("Assets/table-1.jpg");
+
+        }
+        .thumb2
+        {
+            background-image: url("Assets/table-2.jpg");
+
+        }
+        .thumb3
+        {
+            background-image: url("Assets/table-3.jpg");
+        }
         @media screen and (max-width: 768px) {
             .col-sm-4 {
                 text-align: center;
-                margin: 25px 0;
+
             }
+        }
+        body
+        {
+            overflow-x: hidden;
         }
     </style>
 
 </head>
 <body>
-<div class="jumbotron text-center">
+<div class="wrapper jumbotron text-center">
     <h3> Take Care of your body</h3>
     <h2 id="demo"></h2>
 
 </div>
-<div class="container-fluid text-center">
-    <div class="container">
-    <h2>Portfolio</h2><br>
-    <h4>What we have created</h4>
+
+    <div class="wrapper container">
+
     <div class="row text-center">
-        <div class="col-sm-4">
-            <div class="thumbnail">
-                <img src="Assets/table-1.jpg" alt="Paris" width="400" height="300">
+        <div class="col-sm-4 thumb1">
+            <div class="thumb">
+
 
 
             </div>
         </div>
-        <div class="col-sm-4">
-            <div class="thumbnail">
-                <img src="Assets/table-2.jpg" alt="New York" width="400" height="300">
-                <p><strong>New York</strong></p>
-                <p>We built New York</p>
+        <div class="col-sm-4 thumb2">
+            <div class="thumb">
+
             </div>
         </div>
-        <div class="col-sm-4">
-            <div class="thumbnail">
-                <img src="Assets/table-3.jpg" alt="San Francisco" width="400" height="300">
-                <p><strong>San Francisco</strong></p>
-                <p>Yes, San Fran is ours</p>
+        <div class="col-sm-4 thumb3">
+            <div class="thumb">
+
             </div>
         </div>
     </div>
     </div>
-</div>
+
 </body>
 </html>
