@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="fonts/eleganticons/et-icons.css">
+    <link rel="stylesheet" type="text/css" href="css/cardio.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <style>
+
+        .jumbotron
+        {
+            background-image: url("Assets/header.jpg");
+            color: white;
+            height: 600px;
+            padding-top: 70px;
+            margin-bottom: -150px;
+        }
+
+        .thumbnail
+        {
+            padding: 0 0 15px 0;
+            border: none;
+            border-radius: 0;
+            background-color: transparent !important;
+
+
+        }
+
+        .thumbnail img
+        {
+            width: 360px;
+            height: 290px;
+            margin-bottom: 10px;
+        }
+
+        .thumbnail1
+        {
+            padding: 0 0 15px 0;
+            border: none;
+            border-radius: 0;
+            border: 1px solid gray;
+            height: 300px;
+            padding-bottom: 50px !important;
+        }
+
+        .thumbnail1 img
+        {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+
+        }
+        .changebord
+        {
+            border: none;
+            background-color: #122b40;
+        }
+
+
+
+
+        @media screen and (max-width: 766px)
+        {
+            .med-size
+            {
+                text-align: center;
+                margin: 25px 0;
+            }
+        }
+        body
+        {
+            overflow-x: hidden;
+        }
+    </style>
+    <script>
+        var i = 0;
+        var txt = 'Its the only place you have to live';
+        var speed = 50;
+
+        function typeWriter()
+        {
+            if (i < txt.length)
+            {
+                document.getElementById("demo").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+        }
+        $(window).scroll(function() {
+            if ($(".navbar").offset().top > 50) {
+                $('#custom-nav').addClass('affix');
+                $(".navbar-fixed-top").addClass("top-nav-collapse");
+                $('.navbar-brand img').attr('src','Assets/logo-active.png'); //change src
+            } else {
+                $('#custom-nav').removeClass('affix');
+                $(".navbar-fixed-top").removeClass("top-nav-collapse");
+                $('.navbar-brand img').attr('src','Assets/logo.png')
+            }
+        });
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                var scroll = $(window).scrollTop();
+                if (scroll > 50) {
+                    $(".black").css("background" , "white");
+                }
+
+                else{
+                    $(".black").css("background" , "");
+                }
+            })
+        })
+    </script>
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="10" onload="typeWriter()">
+
+<nav class="navbar navbar-default navbar-fixed-top justify-content-center changebord">
+    <div class="container-fluid black">
+        <div class="container ">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="Assets/logo.png" width="50" height="35" align="middle"
+                         style="padding-bottom: 5px" class="d-inline-block align-top">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="#Intro">Intro</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><button type="button" class="btn btn-primary" style="margin-top: 8px">SignUp</button></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="jumbotron text-center">
+    <h3> Take Care of your body</h3>
+    <h2 id="demo"></h2>
+
+</div>
+<section>
+    <div class="cut cut-top"></div>
+    <div class="container">
+        <div class="row intro-tables">
+            <div class="col-md-4">
+                <div class="intro-table intro-table-first">
+                    <h5 class="white heading">Today's Schedule</h5>
+                   <div class="schedule-row row">
+                       <div class="col-xs-6">
+                           <h5 class="regular white">Early Exercise</h5>
+                       </div>
+                       <div class="col-xs-6 text-right">
+                           <h5 class="white">8:30 - 10:00</h5>
+                       </div>
+                   </div>
+                    <div class="schedule-row row">
+                        <div class="col-xs-6">
+                            <h5 class="regular white">Muscle Building</h5>
+                        </div>
+                        <div class="col-xs-6 text-right">
+                            <h5 class="white">8:30 - 10:00</h5>
+                        </div>
+                    </div>
+                    <div class="schedule-row row">
+                        <div class="col-xs-6">
+                            <h5 class="regular white">Cardio</h5>
+                        </div>
+                        <div class="col-xs-6 text-right">
+                            <h5 class="white">8:30 - 10:00</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="intro-table intro-table-hover">
+                    <h5 class="white heading hide-hover">Premium Membership</h5>
+                    <div class="bottom">
+                        <h4 class="white heading small-heading no-margin regular">Register Today</h4>
+                        <h4 class="white heading small-pt">20% Discount</h4>
+                        <a href="#" class="btn btn-white-fill expand">Register</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="intro-table intro-table-third">
+                    <h5 class="white heading">Happy Clients</h5>
+                    <div class="owl-testimonials bottom">
+                        <div class="item">
+                            <h4 class="white heading content">I couldn't be more happy with the results!</h4>
+                            <h5 class="white heading light author">Adam Jordan</h5>
+                        </div>
+                        <div class="item">
+                            <h4 class="white heading content">I can't believe how much better I feel!</h4>
+                            <h5 class="white heading light author">Greg Pardon</h5>
+                        </div>
+                        <div class="item">
+                            <h4 class="white heading content">Incredible transformation and I feel so healthy!</h4>
+                            <h5 class="white heading light author">Christina Goldman</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div id="Services" class="container-fluid text-center ">
+    <div class="container">
+        <h2>Services</h2>
+        <h4 style="padding-bottom: 50px">What we have created</h4>
+        <div class="row text-center">
+            <div class="col-sm-4 med-size">
+                <div class="thumbnail1" style="padding-top: 100px">
+                    <img src="Assets/icons/heart-blue.png" alt="Paris" width="400" height="300" >
+                    <p><strong>Paris</strong></p>
+                    <p>Yes, we built Paris</p>
+                </div>
+            </div>
+            <div class="col-sm-4 med-size">
+                <div class="thumbnail1" style="padding-top: 100px">
+                    <img src="Assets/icons/guru-blue.png" alt="New York" width="400" height="300">
+                    <p><strong>New York</strong></p>
+                    <p>We built New York</p>
+                </div>
+            </div>
+            <div class="col-sm-4 med-size" >
+                <div class="thumbnail1" style="padding-top: 100px">
+                    <img src="Assets/icons/weight-blue.png" alt="San Francisco" >
+                    <p><strong>San Francisco</strong></p>
+                    <p>Yes, San Fran is ours</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

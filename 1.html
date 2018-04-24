@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        .jumbotron
+        {
+            background-image: url("Assets/header.jpg");
+            color: white;
+            height: 1000px;
+            padding-top: 70px;
+            margin-bottom: -150px;
+
+        }
+        .thumbnail
+        {
+            padding: 0 0 15px 0;
+            border: none;
+            border-radius: 0;
+            background-color: transparent !important;
+        }
+        .thumbnail img
+        {
+            width: 360px;
+            height: 290px;
+            margin-bottom: 10px;
+        }
+        .thumbnail1
+        {
+            padding: 0 0 15px 0;
+            border: none;
+            border-radius: 0;
+            border: 1px solid gray;
+            height: 300px;
+            padding-bottom: 50px !important;
+        }
+        .thumbnail1 img
+        {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+        .changebord
+        {
+            border: none;
+            background-color: #122b40;
+        }
+        @media screen and (max-width: 766px)
+        {
+            .med-size
+            {
+                text-align: center;
+                margin: 25px 0;
+            }
+        }
+        body
+        {
+            overflow-x: hidden;
+        }
+        .intro-table-first {
+            background-image: url(./Assets/table-1.jpg);
+
+        }
+        .intro-table-second {
+            background-image: url(./Assets/table-2.jpg);
+        }
+        .intro-table-third {
+            background-image: url(./Assets/table-3.jpg);
+        }
+        .intro-tables .intro-table {
+            position: relative;
+            width: 100%;
+            height: 300px;
+            margin: 20px 0;
+        }
+        .intro-table {
+            -webkit-background-size: cover;
+            background-size: cover;
+            background-repeat: repeat;
+            background-position: 0% 0%;
+        }
+        section {
+            position: relative;
+        }
+
+        .section {
+            padding: 40px 0;
+            background: #fff;
+        }
+
+        .section-padded {
+            padding: 140px 0 40px;
+        }
+        .services {
+            margin: 40px 0;
+        }
+
+        .service {
+            width: 100%;
+            height: 320px;
+            margin: 80px 0;
+            text-align: center;
+            border: 1px solid #ddd;
+            -webkit-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+        }
+
+        .service .icon-holder {
+            position: relative;
+            top: 100px;
+            display: inline-block;
+            margin-bottom: 40px;
+            padding: 10px;
+            background: white;
+            -webkit-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+        }
+
+        .service .heading {
+            position: relative;
+            top: 80px;
+            -webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+
+        .service .icon-holder > img.icon {
+            width: 40px;
+        }
+
+        .service:hover {
+            border-color: #00a8ff;
+        }
+
+        .service:hover .icon-holder {
+            top: -30px;
+        }
+
+        .service:hover .heading {
+            top: -30px;
+        }
+
+        .service .description {
+            width: 80%;
+            margin: 0 auto;
+            opacity: 0;
+            -webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            -webkit-transform: scale(0);
+            -ms-transform: scale(0);
+            transform: scale(0);
+        }
+
+        .service:hover .description {
+            opacity: 1;
+            -webkit-transform: scale(1);
+            -ms-transform: scale(1);
+            transform: scale(1);
+        }
+
+
+    </style>
+    <script>
+        var i = 0;
+        var txt = 'Its the only place you have to live';
+        var speed = 50;
+        function typeWriter()
+        {
+            if (i < txt.length)
+            {
+                document.getElementById("demo").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+        }
+        $(window).scroll(function() {
+            if ($(".navbar").offset().top > 50) {
+                $('#custom-nav').addClass('affix');
+                $(".navbar-fixed-top").addClass("top-nav-collapse");
+                $('.navbar-brand img').attr('src','Assets/logo-active.png'); //change src
+            } else {
+                $('#custom-nav').removeClass('affix');
+                $(".navbar-fixed-top").removeClass("top-nav-collapse");
+                $('.navbar-brand img').attr('src','Assets/logo.png')
+            }
+        });
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                var scroll = $(window).scrollTop();
+                if (scroll > 50) {
+                    $(".black").css("background" , "white");
+                }
+                else{
+                    $(".black").css("background" , "");
+                }
+            })
+        })
+    </script>
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="10" onload="typeWriter()">
+
+<nav class="navbar navbar-default navbar-fixed-top justify-content-center changebord">
+    <div class="container-fluid black">
+        <div class="container ">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="Assets/logo.png" width="50" height="35" align="middle"
+                         style="padding-bottom: 5px" class="d-inline-block align-top">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="#Intro">Intro</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><button type="button" class="btn btn-primary" style="margin-top: 8px">SignUp</button></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="jumbotron text-center" id="Intro">
+    <h2 style="padding-top: 300px"> Take Care of your body</h2>
+    <h1 id="demo"></h1>
+
+</div>
+<div  class="container-fluid text-center">
+    <div class="container">
+        <div class="row text-center intro-tables intro-table">
+            <div class="col-md-4 med-size" style="color: white">
+                <div class="thumbnail intro-table intro-table-first">
+                    <div class="row " >
+                        <div class="col-xs-6">
+                            <h4> Today's Exercise</h4>
+                        </div>
+                        <div class="col-xs-6">
+
+                        </div>
+                    </div>
+                    <div class="row" style="padding-top: 100px">
+                        <div class="col-xs-6">
+                            Warm Up
+                        </div>
+                        <div class="col-xs-6 text-center">
+                            8.30 - 10.00
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            Warm Up
+                        </div>
+                        <div class="col-xs-6 text-center">
+                            8.30 - 10.00
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            Warm Up
+                        </div>
+                        <div class="col-xs-6 text-center">
+                            8.30 - 10.00
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-4 ">
+                <div class="thumbnail intro-table intro-table-second">
+                    <!-- <img src="Assets/table-2.jpg" alt="New York" width="400" height="300"> -->
+
+                </div>
+            </div>
+            <div class="col-md-4 ">
+                <div class="thumbnail intro-table intro-table-third">
+                    <!-- <img src="Assets/table-3.jpg" alt="San Francisco" width="400" height="300"> -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

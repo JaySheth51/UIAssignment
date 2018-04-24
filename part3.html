@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Home</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        .intro-table {
+            -webkit-background-size: cover;
+            background-size: cover;
+            background-repeat: repeat;
+            background-position: 0% 0%;
+        }
+
+        .intro-table-first {
+            background-image: url(./Assets/table-1.jpg);
+
+        }
+
+        .intro-table-second {
+            -webkit-transition: background-image 0.3s ease, background-position 0.3s;
+            transition: background-image 0.3s ease, background-position 0.3s;
+            background-image: url(./Assets/table-2.jpg);
+        }
+
+        .intro-table-third {
+            background-image: url(./Assets/table-3.jpg);
+        }
+
+        .intro-tables .intro-table {
+            position: relative;
+            width: 100%;
+            height: 300px;
+            margin: 40px 0;
+        }
+
+        .Header {
+
+            padding-top: 20px;
+            padding-left: 20px;
+        }
+
+        .brdr {
+            border-top: 1px solid rgba(255, 255, 255, 0.4);
+
+        }
+
+        .clr {
+            color: white;
+            font-weight: 300;
+        }
+
+        .intro-table-second h4 {
+        /*-webkit-transform: translateY(170px);*/
+        /*transform: translateY(170px);*/
+        -webkit-transition: -webkit-transform 0.3s;
+        transition: transform 0.3s;
+        }
+        .intro-table-second:hover
+        {
+            background-image: url(Assets/table-2.jpg);
+            background-position: 100% 100%;
+        }
+
+        .intro-table-second .expand
+        {
+            margin: 30px;
+            margin-top: 120px;
+            opacity: 0;
+            -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+            transition: transform 0.3s ease, opacity 0.3s;
+            -webkit-transform: scale(0.6);
+            -ms-transform: scale(0.6);
+            transform: scale(0.6);
+        }
+
+        .intro-tables .intro-table .bottom
+        {
+            position: absolute;
+            top: 50px;
+            bottom: 0;
+        }
+
+        .btn
+        {
+            font-size: 18px;
+            display: inline-block;
+            padding: 5px 30px;
+            color: white;
+            border: 2px solid transparent;
+            border-radius: 2px;
+            background: transparent;
+            -webkit-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+        }
+
+        .btn.btn-white-fill
+        {
+            color: #fff;
+            border-color: #fff;
+            background: transparent;
+        }
+
+        .btn.btn-white-fill:hover {
+            color: #00a8ff;
+            background: #fff;
+        }
+
+        .btn:hover, .btn:focus {
+            color: white;
+        }
+
+        .intro-table-second .expand {
+            margin: 30px;
+            margin-top: 120px;
+            opacity: 0;
+            -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+            transition: transform 0.3s ease, opacity 0.3s;
+            -webkit-transform: scale(0.6);
+            -ms-transform: scale(0.6);
+            transform: scale(0.6);
+        }
+
+        .intro-table-second:hover .expand {
+            opacity: 1;
+            -webkit-transform: scale(1);
+            -ms-transform: scale(1);
+            transform: scale(1);
+        }
+        .intro-tables .intro-table .bottom {
+            position: absolute;
+
+            bottom: 0;
+        }
+        .intro-tables .intro-table .small-heading {
+            margin: 0;
+            padding: 0 30px;
+        }
+
+
+        /*.addpadding*/
+        /*{*/
+        /*padding-bottom: 50px !important;*/
+
+        /*}*/
+
+        /*.Heading {*/
+        /*margin-left: 10px ;*/
+        /*padding: 10px;*/
+        /*}*/
+
+    </style>
+
+</head>
+<body>
+<div class="container-fluid ">
+    <div class="container">
+        <div class="row  intro-tables intro-table">
+            <div class="col-md-4 clr" style="font-weight:300">
+                <div class="intro-table intro-table-first">
+                    <h4 class="Header">Today's Exercise</h4>
+                    <div class="carousel slide" id="myCarousel" data-ride="carousel" style="margin-top: 80px">
+                        <div class="carousel-inner">
+                            <div class="item active ">
+                                <div class="row  text-center">
+                                    <div class="col-xs-6">
+                                        <h5> Early Exercise</h5>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <h5>8.30 - 10.00</h5>
+                                    </div>
+                                </div>
+                                <div class="row brdr text-center">
+                                    <div class="col-xs-6">
+                                        <h5> Muscle Building</h5>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <h5>8.30 - 10.00</h5>
+                                    </div>
+                                </div>
+                                <div class="row brdr  text-center">
+                                    <div class="col-xs-6">
+                                        <h5> Cardio</h5>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <h5>8.30 - 10.00</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="row text-center">
+                                    <div class="col-xs-6">
+                                        <h5> Early Exercise</h5>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <h5>8.30 - 10.00</h5>
+                                    </div>
+                                </div>
+                                <div class="row brdr text-center">
+                                    <div class="col-xs-6">
+                                        <h5> Muscle Building</h5>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <h5>8.30 - 10.00</h5>
+                                    </div>
+                                </div>
+                                <div class="row brdr text-center">
+                                    <div class="col-xs-6">
+                                        <h5> Cardio</h5>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <h5>8.30 - 10.00</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="row text-center">
+                                    <div class="col-xs-6">
+                                        <h5> Early Exercise</h5>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <h5>8.30 - 10.00</h5>
+                                    </div>
+                                </div>
+                                <div class="row brdr text-center">
+                                    <div class="col-xs-6">
+                                        <h5> Muscle Building</h5>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <h5>8.30 - 10.00</h5>
+                                    </div>
+                                </div>
+                                <div class="row brdr text-center">
+                                    <div class="col-xs-6">
+                                        <h5>Cardio</h5>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <h5>8.30 - 10.00</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+            <div class="col-md-4">
+                <div class="intro-table intro-table-second">
+                    <h4 class="clr Header hide-hover"> Premium Membership</h4>
+                    <div class="bottom">
+                            <h4 class="clr header small-heading no-margin"> Register Today</h4>
+                            <h4 class="clr Header small-pt">20% Discount</h4>
+                            <a href="#" class="btn btn-white-fill expand">Register</a>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-4 ">
+                <div class=" intro-table intro-table-third">
+                    <h4 class="clr Header">Happy Clients</h4>
+                    <div class="carousel slide" id="myCarousel1" data-ride="carousel" style="margin-top: 80px">
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <h4 class="clr Header">I couldn't be more happy with the results!</h4>
+                                <h5 class="clr Header">Adam Jordan</h5>
+                            </div>
+                            <div class="item">
+                                <h4 class="clr Header">I can't believe how much better I feel!</h4>
+                                <h5 class="clr Header">Greg Pardon</h5>
+                            </div>
+                            <div class="item">
+                                <h4 class="clr Header">Incredible transformation and I feel so healthy!</h4>
+                                <h5 class="clr Header">Christina Goldman</h5>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

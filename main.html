@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+
+        .jumbotron
+        {
+            background-image: url("Assets/header.jpg");
+            color: white;
+            height: 600px;
+            padding-top: 70px;
+            margin-bottom: -150px;
+        }
+
+        .thumbnail
+        {
+            padding: 0 0 15px 0;
+            border: none;
+            border-radius: 0;
+            background-color: transparent !important;
+
+
+        }
+
+        .thumbnail img
+        {
+            width: 360px;
+            height: 290px;
+            margin-bottom: 10px;
+        }
+
+        .thumbnail1
+        {
+            padding: 0 0 15px 0;
+            border: none;
+            border-radius: 0;
+            border: 1px solid gray;
+            height: 300px;
+            padding-bottom: 50px !important;
+        }
+
+        .thumbnail1 img
+        {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+
+        }
+        .changebord
+        {
+            border: none;
+            background-color: #122b40;
+        }
+
+
+
+
+        body
+        {
+            overflow-x: hidden;
+        }
+    </style>
+    <script>
+        var i = 0;
+        var txt = 'Its the only place you have to live';
+        var speed = 50;
+
+        function typeWriter()
+        {
+            if (i < txt.length)
+            {
+                document.getElementById("demo").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+        }
+        $(window).scroll(function() {
+            if ($(".navbar").offset().top > 50) {
+                $('#custom-nav').addClass('affix');
+                $(".navbar-fixed-top").addClass("top-nav-collapse");
+                $('.navbar-brand img').attr('src','Assets/logo-active.png'); //change src
+            } else {
+                $('#custom-nav').removeClass('affix');
+                $(".navbar-fixed-top").removeClass("top-nav-collapse");
+                $('.navbar-brand img').attr('src','Assets/logo.png')
+            }
+        });
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                var scroll = $(window).scrollTop();
+                if (scroll > 50) {
+                    $(".black").css("background" , "white");
+                }
+
+                else{
+                    $(".black").css("background" , "");
+                }
+            })
+        })
+    </script>
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="10" onload="typeWriter()">
+
+<nav class="navbar navbar-default navbar-fixed-top justify-content-center changebord">
+    <div class="container-fluid black">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="Assets/logo.png" width="50" height="35" align="middle"
+                         style="padding-bottom: 5px" class="d-inline-block align-top">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="#Intro">Intro</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><button type="button" class="btn btn-primary" style="margin-top: 8px">SignUp</button></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="jumbotron text-center">
+    <h3> Take Care of your body</h3>
+    <h2 id="demo"></h2>
+
+</div>
+
+<div id="Intro" class="container-fluid text-center">
+
+
+    <div class="container">
+
+        <div class="row text-center">
+            <div class="col-sm-4 med-size">
+
+                <div class="thumbnail">
+                    <img src="Assets/table-1.jpg" alt="Paris" width="400" height="300">
+
+                </div>
+
+            </div>
+            <div class="col-sm-4 med-size">
+                <div class="thumbnail">
+                    <img src="Assets/table-2.jpg" alt="New York" width="400" height="300">
+
+                </div>
+            </div>
+            <div class="col-sm-4 med-size">
+                <div class="thumbnail">
+                    <img src="Assets/table-3.jpg" alt="San Francisco" width="400" height="300">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="Services" class="container-fluid text-center ">
+    <div class="container">
+        <h2>Services</h2>
+        <h4 style="padding-bottom: 50px">What we have created</h4>
+        <div class="row services">
+            <div class="col-sm-4 ">
+                <div class="thumbnail1" style="padding-top: 100px">
+                    <img src="Assets/icons/heart-blue.png" alt="Paris" width="400" height="300" >
+                    <p><strong>Paris</strong></p>
+                    <p>Yes, we built Paris</p>
+                </div>
+            </div>
+            <div class="col-sm-4 ">
+                <div class="thumbnail1" style="padding-top: 100px">
+                    <img src="Assets/icons/guru-blue.png" alt="New York" width="400" height="300">
+                    <p><strong>New York</strong></p>
+                    <p>We built New York</p>
+                </div>
+            </div>
+            <div class="col-sm-4 " >
+                <div class="thumbnail1" style="padding-top: 100px">
+                    <img src="Assets/icons/weight-blue.png" alt="San Francisco" >
+                    <p><strong>San Francisco</strong></p>
+                    <p>Yes, San Fran is ours</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
