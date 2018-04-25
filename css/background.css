@@ -1,0 +1,174 @@
+.Header
+{
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.brdr
+{
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+
+}
+
+.clr
+{
+    color: white;
+    font-weight: 300;
+}
+
+
+
+.btn
+{
+    font-size: 18px;
+    padding: 5px 30px;
+    color: white;
+    border: 5px solid transparent;
+    border-radius: 2px;
+    background: transparent;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.btn.btn-white-fill
+{
+    color: #fff;
+    border-color: #fff;
+    background: transparent;
+}
+
+
+
+.intro-tables {
+    top: -130px;
+    position: relative;
+}
+
+.intro-table {
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: 0% 0%;
+}
+
+.intro-table-first {
+    background-image: url('../Assets/table-1.jpg');
+}
+
+.intro-table-hover {
+    -webkit-transition: background-image 0.3s ease, background-position 0.3s;
+    transition: background-image 0.3s ease, background-position 0.3s;
+    background-image: url('../Assets/table-2.jpg');
+}
+
+.intro-table-hover h4 {
+    -webkit-transform: translateY(170px);
+    transform: translateY(170px);
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+}
+
+.intro-table-hover:hover {
+    background-image: url('../Assets/table-2.jpg');
+    background-position: 50% 50%;
+}
+
+.intro-table-third {
+    background-image: url('../Assets/table-3.jpg');
+}
+
+.intro-table-hover .expand {
+    margin: 30px;
+    margin-top: 120px;
+    opacity: 0;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+    transition: transform 0.5s ease, opacity 0.3s;
+    -webkit-transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    transform: scale(0.6);
+}
+
+.intro-table-hover:hover h4 {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.intro-table-hover:hover .expand {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+.intro-table-hover .hide-hover {
+    -webkit-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
+}
+
+.intro-table-hover:hover .hide-hover {
+    opacity: 0;
+}
+
+.intro-tables .intro-table {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin: 160px 0;
+}
+
+
+
+
+
+.intro-tables .intro-table .bottom {
+    position: absolute;
+    bottom: 0;
+}
+.btn {
+    font-size: 18px;
+    display: inline-block;
+    padding: 15px 30px;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 2px;
+    background: transparent;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.btn:hover,
+.btn:focus {
+    color: white;
+}
+.btn.btn-white-fill {
+    color: #fff;
+    border-color: #fff;
+    background: transparent;
+}
+
+.btn.btn-clr-fill:hover {
+    color: #00a8ff;
+    background: #fff;
+}
+.intro-tables .intro-table .heading {
+    margin: 0;
+    padding: 30px;
+}
+
+.intro-tables .intro-table .small-heading {
+    margin: 0;
+    padding: 0 30px;
+}
+.white
+{
+    color: white;
+}
+.regular {
+    font-weight: 400;
+}
+.small-pt {
+    padding:0 !important;
+    padding-top:5px !important;
+    padding-left:30px !important;
+    position: relative;
+}

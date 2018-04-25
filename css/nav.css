@@ -1,0 +1,26 @@
+.navbar {
+    padding: 30px;
+    background-color: #252D44;
+}
+.navbar.navbar-header
+{
+    top: -10px !important;
+}
+div a img
+{
+    padding-top: -10px;
+}
+.btn.btn-clr
+{
+    background: #00a8ff;
+}
+.navbar-collapse.collapse.in ul
+{
+    text-align: center;
+}
+a
+{
+    color: white;
+    font-weight: 400;
+
+}
