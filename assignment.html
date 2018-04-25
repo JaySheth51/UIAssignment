@@ -25,6 +25,7 @@
             position: relative;
             top: 50%;
             transform: translateY(-50%);
+            overflow-x: hidden;
         }
         body
         {
@@ -45,7 +46,7 @@
             }
         }
         $(window).scroll(function () {
-            if ($(".navbar").offset().top > 300) {
+            if ($(".navbar").offset().top > 100) {
                 $('#custom-nav').addClass('affix');
                 $(".navbar-fixed-top").addClass("top-nav-collapse");
                 $('.navbar-brand img').attr('src', 'Assets/logo-active.png'); //change src
@@ -76,18 +77,20 @@
     <div class="container-fluid black">
     <div class="container">
         <div class="navbar-header">
+        <img src="Assets/logo.png" style="padding: 5px">
             <button type="button" class="navbar-toggle" data-toggle="collapse"
                     data-target=".navbar-collapse">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#"><img src="Assets/logo.png"> </a>
+
         </div>
         <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="#">Intro</a></li>
-                <li><a href="#">Services</a></li>
+
+            <ul class="nav navbar-nav navbar-right" style="font-size: 18px">
+                <li class="active"><a href="#Intro">Intro</a></li>
+                <li><a href="#Services">Services</a></li>
                 <li><a href="#">Pricing</a> </li>
                 <li><a href="#">Team</a> </li>
                 <li ><a href="#" data-toggle="modal" data-target="#modal1" class="btn btn-clr">SignUp</a> </li>
@@ -98,7 +101,7 @@
 </nav>
 <div class="jumbotron text-center" id="Intro">
     <div class="container">
-    <h2 style="padding-top: 300px"> Take Care of your body</h2>
+    <h2 > Take Care of your body</h2>
     <h1 id="demo"></h1>
     </div>
 </div>
@@ -231,7 +234,7 @@
         </div>
     </div>
 </div>
-<section class="section section-padded">
+<section class="section section-padded" id="Services">
     <div class="container">
         <div class="row text-center title">
             <h2> Services </h2>
